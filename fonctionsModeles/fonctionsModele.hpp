@@ -24,3 +24,16 @@ TYPE CalculerSomme(const TYPE _tableau[], const int& _nbElements)
 
 	return somme;
 }
+
+template<typename TYPE>
+unsigned int CompterElement(const TYPE& _element, const TYPE _tableau[], const int& _nbElements)
+{
+	int nbOccurences = 0;
+	for (int i = 0; i < _nbElements; i++)
+	{
+		if (_tableau[i] == _element)
+			++nbOccurences;
+	}
+
+	return nbOccurences;
+}
