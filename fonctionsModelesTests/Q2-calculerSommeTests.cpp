@@ -28,12 +28,12 @@ namespace fonctionsModelesTests
 			Assert::AreEqual(sommeAttendue, CalculerSomme(tabInt, 5));
 		}
 
-		//TEST_METHOD(CalculerSomme_DansUnTableauDeString_DevraitRetournerLaConcatenationDesString)
-		//{
-		//	string tabString[5] = { "Huit", "Cinq", "Deux", "Trois", "Quatre" };
-		//	string sommeAttendue = tabString[0] + tabString[1] + tabString[2] + tabString[3] + tabString[4];
+		TEST_METHOD(CalculerSomme_DansUnTableauDeString_DevraitRetournerLaConcatenationDesString)
+		{
+			string tabString[5] = { "Huit", "Cinq", "Deux", "Trois", "Quatre" };
+			string sommeAttendue = tabString[0] + tabString[1] + tabString[2] + tabString[3] + tabString[4];
 
-		//	Assert::AreEqual(sommeAttendue, CalculerSomme(tabString, 5));
-		//}
+			Assert::AreEqual(sommeAttendue, CalculerSomme(tabString, 5));
+		}
 	};
 }
