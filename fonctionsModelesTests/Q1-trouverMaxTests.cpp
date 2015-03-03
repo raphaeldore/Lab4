@@ -12,13 +12,13 @@ namespace fonctionsModelesTests
 
 		//QUESTION 1
 
-		//TEST_METHOD(TrouverMax_DansUnTableauDeFloat_DevraitRetournerLeMaximum)
-		//{
-		//	const float MAX_ATTENDU = 33.1;
-		//	float tabFloat[5] = { 22.2f, 11.1f, MAX_ATTENDU, -55.5f, -99.9f };
+		TEST_METHOD(TrouverMax_DansUnTableauDeFloat_DevraitRetournerLeMaximum)
+		{
+			const float MAX_ATTENDU = 33.1;
+			float tabFloat[5] = { 22.2f, 11.1f, MAX_ATTENDU, -55.5f, -99.9f };
 
-		//	Assert::AreEqual(MAX_ATTENDU, TrouverMax(tabFloat, 5));
-		//}
+			Assert::AreEqual(MAX_ATTENDU, TrouverMax(tabFloat, 5));
+		}
 
 		//TEST_METHOD(TrouverMax_DansUnTableauDeInt_DevraitRetournerLeMaximum)
 		//{
