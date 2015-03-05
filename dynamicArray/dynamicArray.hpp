@@ -50,7 +50,7 @@ void DynamicArray<T>::setCapacite(const unsigned int _capacite)
 			tabElements[i] = vieuxTableau[i];
 		}
 
-		capacite = tmpCapacite;
+		capacite = _capacite;
 
 		delete[] vieuxTableau;
 	}
