@@ -22,3 +22,15 @@ T DynamicArray<T>::getElement(const int& _index) const
 {
 	return tabElements[_index];
 }
+
+template <class T>
+void DynamicArray<T>::setElement(const unsigned _index, const T& _valeur)
+{
+	tabElements[_index] = _valeur;
+}
+
+//template <class T>
+//void DynamicArray<T>::setCapacite(const unsigned int _capacite)
+//{
+//	capacite = _capacite;
+//}
