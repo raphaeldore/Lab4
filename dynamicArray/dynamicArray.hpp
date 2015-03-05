@@ -33,6 +33,9 @@ T DynamicArray<T>::getElement(const int& _index) const
 template <class T>
 void DynamicArray<T>::setElement(const unsigned _index, const T& _valeur)
 {
+	if (_index >= capacite)
+		setCapacite(_index + 1);
+
 	tabElements[_index] = _valeur;
 }
 
