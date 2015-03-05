@@ -8,6 +8,9 @@ DynamicArray<T>::DynamicArray()
 template <class T>
 DynamicArray<T>::DynamicArray(const unsigned int _capacite)
 {
+	if (_capacite < 1)
+		throw std::invalid_argument("Vous ne pouvez pas initialiser un tableau plus petit que 1");
+
 	capacite = _capacite;
 	tabElements = new T[_capacite]();
 }
