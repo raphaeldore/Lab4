@@ -14,6 +14,9 @@ public:
 	void setCapacite(const unsigned int _capacite);
 
 private:
+	DynamicArray(const DynamicArray& _otherDynamicArray);
+	DynamicArray& operator=(const DynamicArray& _otherDynamicArray);
+
 	unsigned int capacite;
 	T * tabElements;
 };
