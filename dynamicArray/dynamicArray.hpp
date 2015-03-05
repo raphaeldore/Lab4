@@ -31,7 +31,7 @@ template <class T>
 T DynamicArray<T>::getElement(const unsigned int& _index) const
 {
 	if (_index >= capacite)
-		throw std::out_of_range("Vous avez tenté d'accèder à un élément hors du tableau");
+		throw std::out_of_range("Vous avez tentÃ© d'accÃ¨der Ã  un Ã©lÃ©ment hors du tableau");
 
 	return tabElements[_index];
 }
@@ -49,9 +49,9 @@ template <class T>
 void DynamicArray<T>::setCapacite(const unsigned int _capacite)
 {
 	if (_capacite < 1)
-		throw std::invalid_argument("Vous ne pouvez pas redimensionner un tableau d'une capacité plus petite que 1");
+		throw std::invalid_argument("Vous ne pouvez pas redimensionner un tableau d'une capacitÃ© plus petite que 1");
 
-	if (this->capacite != _capacite)
+	if (capacite != _capacite)
 	{
 		T * vieuxTableau = tabElements;
 		tabElements = new T[_capacite]();
