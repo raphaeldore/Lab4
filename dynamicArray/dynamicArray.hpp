@@ -48,6 +48,9 @@ void DynamicArray<T>::setElement(const unsigned _index, const T& _valeur)
 template <class T>
 void DynamicArray<T>::setCapacite(const unsigned int _capacite)
 {
+	if (_capacite < 1)
+		throw std::invalid_argument("Vous ne pouvez pas redimensionner un tableau d'une capacité plus petite que 1");
+
 	if (this->capacite != _capacite)
 	{
 		T * vieuxTableau = tabElements;
