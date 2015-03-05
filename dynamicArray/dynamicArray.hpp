@@ -16,3 +16,9 @@ int DynamicArray<T>::getCapacite() const
 {
 	return capacite;
 }
+
+template <class T>
+T DynamicArray<T>::getElement(const int& _index) const
+{
+	return tabElements[_index];
+}
