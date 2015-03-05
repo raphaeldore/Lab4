@@ -5,12 +5,13 @@ class DynamicArray
 {
 public:
 	DynamicArray();
+	DynamicArray(const unsigned int _capacite);
 	~DynamicArray();
 
 	int getCapacite() const;
 	T getElement(const int & _index) const;
 	void setElement(const unsigned int _index, const T& _valeur);
-	//void setCapacite(const unsigned int _capacite);
+	void setCapacite(const unsigned int _capacite);
 
 private:
 	unsigned int capacite;
