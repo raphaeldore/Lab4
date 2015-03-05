@@ -9,7 +9,7 @@ public:
 	~DynamicArray();
 
 	int getCapacite() const;
-	T getElement(const int & _index) const;
+	T getElement(const unsigned int & _index) const;
 	void setElement(const unsigned int _index, const T& _valeur);
 	void setCapacite(const unsigned int _capacite);
 

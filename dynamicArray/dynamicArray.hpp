@@ -28,8 +28,11 @@ int DynamicArray<T>::getCapacite() const
 }
 
 template <class T>
-T DynamicArray<T>::getElement(const int& _index) const
+T DynamicArray<T>::getElement(const unsigned int& _index) const
 {
+	if (_index >= capacite)
+		throw std::out_of_range("Vous avez tenté d'accèder à un élément hors du tableau");
+
 	return tabElements[_index];
 }
 
